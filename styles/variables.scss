@@ -1,0 +1,29 @@
+:root {
+    --main-color               : #404040;
+    --main-background          : #EDF0F2;
+    --link-color               : #2980B9;
+    --link-hover-color         : #3091D1;
+    --link-visited-color       : #9B59B6;
+    // Layout
+    --layout-nav-background    : #333F67;
+    --layout-content-background: #FCFCFC;
+    // Search
+    --nav-search-logo-hover    : #29355C;
+    --nav-search-version-color : #A3C4E1;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-color               : #E0E0E1;
+        --main-background          : #202326;
+        --link-color               : #88CCFF;
+        --link-hover-color         : #99DDFF;
+        --link-visited-color       : #CB99F6;
+        // Layout
+        --layout-nav-background    : #25282B;
+        --layout-content-background: #2E3236;
+        // Search
+        --nav-search-logo-hover    : #333639;
+        --nav-search-version-color : #BBBBBB;
+    }
+}

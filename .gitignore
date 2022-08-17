@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ignorar arquivos
+todo.md
+Next.js Handbook.md
+Godot com Spine.md
+Dicas de Godot.md
