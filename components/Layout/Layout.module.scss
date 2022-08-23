@@ -4,31 +4,35 @@
 }
 
 .sidenav {
-    background    : var(--layout-nav-background);
-    height        : 100%;
-    width         : 300px;
-    position      : fixed; // Fixa a Sidebar, ela não se move com o scroll da página
-    z-index       : 1; // Para que a Sidebar fique acima do conteúdo
-    top           : 0; // Resolve o problema da margin do conteúdo, tipo o H1 que empurra a sidebar um pouco para baixo
-    overflow-x    : hidden; // Para que não haja scroll horizontal na Sidebar
+    background: var(--layout-nav-background);
+    height    : 100%;
+    width     : 300px;
+    position  : fixed; // Fixa a Sidebar, ela não se move com o scroll da página
+    z-index   : 1; // Para que a Sidebar fique acima do conteúdo
+    top       : 0; // Resolve o problema da margin do conteúdo, tipo o H1 que empurra a sidebar um pouco para baixo
+    overflow-x: hidden; // Para que não haja scroll horizontal na Sidebar
 }
 
-.main {
-    margin-left: 300px; // Margem da Sidebar
-    padding    : 0px 10px; // padding do conteúdo
-    background : var(--layout-content-background);
+.content {
+    margin-left   : 300px; // Margem da Sidebar
+    // padding    : 0px 10px; // padding do conteúdo
+    padding       : 1.618em 3.236em;
+    background    : var(--layout-content-background);
 }
 
 .breadcrumb {
     height: 50px;
 }
 
-.footer {
-    height: 50px;
-}
+@media only screen and (max-width: 768px) {
 
-@media only screen and (min-width: 800px) {
-    .sidenav a {
-        font-size: 18px;
+    .sidenav {
+        display: none;
+    }
+
+    .content {
+        margin-left  : 0;
+        padding-right: 10px;
+        padding-left : 10px;
     }
 }

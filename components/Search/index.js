@@ -6,6 +6,8 @@ import styles from './Search.module.scss'
 export default function Search() {
     // spine.svg
     // docs_logo.png
+    // stable
+    // Godot v3.5 Spine v4.1
     return (
         <div className={styles.search}>
             <Link href='/'>

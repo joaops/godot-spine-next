@@ -1,25 +1,20 @@
-import Link from 'next/link'
-
 import Search from '../Search'
+import Breadcrumb from '../Breadcrumb'
+import Footer from '../Footer'
 
 import styles from './Layout.module.scss'
 
 export default function Layout({ children }) {
+    // console.log(children.props.data)
     return (
         <div className={styles.container}>
             <nav className={styles.sidenav}>
                 <Search />
-                <Link href='/'>
-                    <a>Home</a>
-                </Link>
-                <Link href='/about'>
-                    <a>About</a>
-                </Link>
             </nav>
-            <div className={styles.main}>
-                <div className={styles.breadcrumb}></div>
+            <div className={styles.content}>
+                <Breadcrumb />
                 {children}
-                <div className={styles.footer}></div>
+                <Footer prev={children?.props?.data?.prev} next={children?.props?.data?.next} />
             </div>
         </div>
     )

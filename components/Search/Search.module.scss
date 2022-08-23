@@ -1,19 +1,21 @@
 .search {
-    display        : flex;
-    flex-direction : column;
-    align-items    : center;
-    justify-content: center;
+    display           : flex;
+    flex-direction    : column;
+    align-items       : center;
+    justify-content   : center;
     background     : var(--layout-nav-background);
-    padding-top    : 13px;
+    // background        : pink;
+    padding-top       : 13px;
 }
 
 .logo {
     display        : flex;
     align-items    : center;
     justify-content: center;
-    width          : 210px;
-    height         : 210px;
-    padding        : 4px 6px;
+    width          : 222px;
+    height         : 218px;
+    // padding        : 4px 6px;
+    // background     : lightcoral;
 
     &:hover {
         background: var(--nav-search-logo-hover);
